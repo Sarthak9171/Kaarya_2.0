@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {
-  Paper,
+  // Paper,
   Box,
   Typography,
   TextField,
@@ -20,15 +20,15 @@ import {
   Grid,
   Card,
   CardContent,
-  Divider
+  // Divider
 } from '@mui/material';
 import {
   Delete as DeleteIcon,
-  Timer as TimerIcon,
+  // Timer as TimerIcon,
   Assignment as TaskIcon,
   CheckCircle as CheckCircleIcon,
   PendingActions as PendingIcon,
-  Dashboard as DashboardIcon
+  // Dashboard as DashboardIcon
 } from '@mui/icons-material';
 
 interface Task {

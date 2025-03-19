@@ -20,7 +20,7 @@ import {
   CheckCircle,
   Timer,
   WbSunny,
-  Star
+  // Star
 } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
 
