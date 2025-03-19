@@ -1,0 +1,18 @@
+:root {
+  --primary: #2196f3;
+  --secondary: #f50057;
+  --success: #4caf50;
+  --danger: #f44336;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} 
