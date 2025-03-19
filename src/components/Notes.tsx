@@ -14,7 +14,6 @@ import {
   Button
 } from '@mui/material';
 import {
-  Add as AddIcon,
   Delete as DeleteIcon,
   Edit as EditIcon
 } from '@mui/icons-material';
