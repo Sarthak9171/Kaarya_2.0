@@ -14,7 +14,7 @@ import {
   Box,
   Chip,
   Alert,
-  CircularProgress
+  // CircularProgress
 } from '@mui/material';
 import {
   PlayArrow,
@@ -68,7 +68,6 @@ export const FocusMusic: React.FC = () => {
   const [timer, setTimer] = useState<number | null>(null);
   const [timeRemaining, setTimeRemaining] = useState<number | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [isLoading, setIsLoading] = useState(false);
   
   const iframeRef = useRef<HTMLIFrameElement | null>(null);
 
@@ -189,11 +188,8 @@ export const FocusMusic: React.FC = () => {
                       size="large" 
                       onClick={handlePlayPause}
                       color="primary"
-                      disabled={isLoading}
                     >
-                      {isLoading ? (
-                        <CircularProgress size={24} />
-                      ) : isPlaying ? (
+                      {isPlaying ? (
                         <Pause />
                       ) : (
                         <PlayArrow />
@@ -240,16 +236,15 @@ export const FocusMusic: React.FC = () => {
                 <Grid item xs={12} sm={6} md={4} key={track.id}>
                   <Card 
                     sx={{ 
-                      cursor: isLoading ? 'wait' : 'pointer',
+                      cursor: 'pointer',
                       bgcolor: currentTrack.id === track.id ? 'action.selected' : 'background.paper',
-                      opacity: isLoading ? 0.7 : 1,
                       transition: 'all 0.2s ease',
                       '&:hover': {
                         transform: 'translateY(-2px)',
                         boxShadow: 3
                       }
                     }}
-                    onClick={() => !isLoading && handleTrackChange(track)}
+                    onClick={() => handleTrackChange(track)}
                   >
                     <CardContent>
                       <Stack spacing={1}>
