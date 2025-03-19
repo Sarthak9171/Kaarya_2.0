@@ -9,7 +9,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    // "@rollup/rollup-linux-x64-gnu": "^4.36.0",
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.15.6",
